@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/selectedFoodText"
+        android:layout_width="214dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="90dp"
+        android:fontFamily="@font/muli_bold"
+        android:hint="winning food"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/addFoodText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.588"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="110dp"
+        app:layout_constraintBottom_toTopOf="@+id/selectedFoodText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <Button
+        android:id="@+id/decideBtn"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="413dp"
+        android:layout_height="48dp"
+        android:background="@color/colorPrimary"
+        android:fontFamily="@font/muli_bold"
+        android:text="DECIDE"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/addFoodText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:fontFamily="@font/muli_bold"
+        android:hint="add new food..."
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/addFoodBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/addFoodBtn"
+        android:layout_width="224dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="90dp"
+        android:text="ADD FOOD"
+        app:layout_constraintBottom_toTopOf="@+id/decideBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/showListBtn"
+        android:layout_width="34dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="24dp"
+        android:background="@color/colorPrimary"
+        android:backgroundTint="@color/colorPrimary"
+        android:foregroundTint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/addFoodBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/addFoodText"
+        app:srcCompat="?attr/actionModePasteDrawable"
+        app:tint="@color/white" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
